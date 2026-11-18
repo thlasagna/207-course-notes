@@ -1,9 +1,9 @@
 /**
  * Exercise (Chapter 1: Introduction to Java) — Strings and StringBuilder.
- *
+ * <p>
  * Complete {@link #firstLetters(String)} below.
- *
- *
+ * <p>
+ * <p>
  * Relevant reading: 1.4. Strings and 1.4.4. StringBuilder.
  */
 public class FirstLetters {
@@ -18,7 +18,7 @@ public class FirstLetters {
      * Given a string of words separated by single spaces, returns a new string
      * made of the first character of each word, in order. You may assume the
      * input contains at least one word.
-     *
+     * <p>
      * Example: {@code firstLetters("Good Morning")} returns {@code "GM"}.
      *
      * @param words a non-empty string of words separated by single spaces
@@ -26,6 +26,12 @@ public class FirstLetters {
      */
     public static String firstLetters(String words) {
         // TODO: complete
-        return "";
+        String b = "";
+        String[] a = words.split(" ");
+        for (String word : a) {
+            b += word.charAt(0);
+
+        }
+        return b;
     }
 }
